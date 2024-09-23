@@ -3,10 +3,13 @@
     background-color: aliceblue;
     border-radius: 10px;
     margin-bottom: 10px;
-    border-width: 300px;
+    border-width: 100px;
 }
 .day:hover {
-    background-color: azure;
+    background-color: cadetblue;
+    animation-name: hoverAnime;
+    animation-duration:  2s;
+    scale: 110%;
 }
 
 img {
@@ -14,6 +17,13 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@keyframes hoverAnime {
+    0%   {background: linear-gradient(to right, #fb6241, #fb6249); scale: 102%;}
+    25%  {background: linear-gradient(to right, #fb624A, #fb624D); scale: 104%}
+    50%  {background: linear-gradient(to right, #fb624D, #fb629D); scale: 106%}
+    100% {background: linear-gradient(to right, #fb629D, #fb62BD); scale: 108%}
 }
 
 @keyframes example {
@@ -25,5 +35,5 @@ img {
 body {
     background-color: paleturquoise;
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 1s;
 }
