@@ -1,0 +1,29 @@
+.day{
+    font-size: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-width: 300px;
+}
+.day:hover {
+    background-color: azure;
+}
+
+img {
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes example {
+    from {background-color: dimgray;}
+    to {background-color: paleturquoise;}
+}
+
+/* The element to apply the animation to */
+body {
+    background-color: paleturquoise;
+    animation-name: example;
+    animation-duration: 4s;
+}

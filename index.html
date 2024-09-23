@@ -4,14 +4,22 @@
 <head>
     <title>Fall Weather Forecast</title>
     <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
-
-    <!-- Embedded styles will go here -->
-
+    <!-- Embedded styles here -->
+    <style>
+        .day {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Fall Weather Forecast</h1>
+    <h1 style="text-align: center">Fall Weather Forecast</h1>
+    <div class="image">
+        <!--Inline css here-->
+        <img style="border-radius: 10px;" src="sunny.jpg" alt="sunny" width="500">
+    </div>
     <div class="forecast">
         <p class="day">Monday: Sunny, 60°F</p>
         <p class="day">Tuesday: Cloudy, 55°F</p>
